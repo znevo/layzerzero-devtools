@@ -642,10 +642,10 @@ contract EndpointV2Mock is ILayerZeroEndpointV2, MessagingContext {
     /// @dev this check provides the ability for Oapp to lock in a trusted msgLib
     /// @dev it will fist check if the msgLib is the currently configured one. then check if the msgLib is the one in grace period of msgLib versioning upgrade
     function isValidReceiveLibrary(
-        address _receiver,
-        uint32 _srcEid,
-        address _actualReceiveLib
-    ) public view returns (bool) {
+        address /*_receiver*/,
+        uint32 /*_srcEid*/,
+        address /*_actualReceiveLib*/
+    ) public pure returns (bool) {
         return true;
     }
 }
